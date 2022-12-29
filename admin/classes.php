@@ -19,10 +19,10 @@
 
 .btn {
 border-color: white;
-color: #579BB1;
+color: #181D31;
 background-color:white;
 }
-.btn-outline-primary {
+.btn-outline-info {
 color: #579BB1;
 border-color: white;
 }
