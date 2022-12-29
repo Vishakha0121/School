@@ -38,7 +38,7 @@ border-color: white;
             if ($query == "add") {
                 echo "
                     <div class='card account custom-shadow mt-5 p-3'>
-                      <h3 class='text-center' style='background-color:gray;color:white;border-radius: 1rem 0 0 1rem;'>Add Timetable</h3>
+                      <h3 class='text-center' style='background-color:gray;color:white;border-radius: 1rem 0 0 1rem;'>Add Timetable 🕛</h3>
                         <hr>
                         <form class='card-body' style='background-color:gray;color:white;' method='POST' action='manage-timetable.php' enctype='multipart/form-data'>                            
                             <div class='form-group'>
