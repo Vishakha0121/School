@@ -53,13 +53,13 @@
                 </div>
             </div>
 
-            <div class="announcements col-12 col-sm">
-                <div class="text-center">
-                    <br>
-                    <p><b>ANNOUNCEMENTS</b></p>
+           
+            <div class="announcements col-12 col-sm" >
+                <div class="text-center"style="background-color:black;color:#fff;">
+                    <h4>ANNOUNCEMENTS</h4>
                 </div>     
-                <ul id="notice" class="text-center p-3">
-                <marquee direction="up" behavior="scroll-alternate" loop="">
+                <ul id="notice" class="text-center p-3" >
+                <marquee direction="up" scrollamount="3" behavior="scroll-alternate" loop="" >
                     <?php
                     $announcements_query = "SELECT * FROM announcements WHERE active = 1 ORDER BY announcement_id ASC";
                     $response = mysqli_query($conn, $announcements_query);
@@ -82,13 +82,16 @@
                     </marquee>
                 </ul>   
             </div>
+
+
         </div>
         <br>
 
-        <div class="jumbotron jumbotron-fluid mt-5">
-            <h2>Today's Transport Schedules</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
-            <?php
+       <div class="jumbotron jumbotron-fluid mt-5 " id="hi" style="padding:5%; background-color: white;">
+            <div class="check" style="padding:3%; background-color: #e9ecef;">
+                <h2>Today's Transport Schedules</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
+                <?php
             $today = strtolower(date('l'));
 
             $schedules_query = "SELECT * FROM vehicles_schedule WHERE day = '$today' ORDER BY departure";
