@@ -17,6 +17,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- changes 1   -->
+    <style type="text/css">
+   
+
+            .mt-5 {
+               margin-top:0;
+            }
+    </style>
+<!--  end 1 change    -->
     </head>
 
 <body>
@@ -25,25 +34,22 @@
         <?php include("./includes/header.php") ?>
         <br>
 
-        <div class="row">
+       <div class="row" style="padding: 5%";>
             <div class="wrapper col-12 col-sm-12 col-lg-8">
-                <div id="carousel-update" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#carousel-update" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-update" data-slide-to="1"></li>
-                        <li data-target="#carousel-update" data-slide-to="2"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
+                <div id="carousel-update" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+                    
+                     <div class="carousel-inner" >
+                        
+                        <div class="carousel-item active ">
+                        <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-update" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-update" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+
+                        <div class="carousel-item ">
+                        <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
+                        </div>
+
+                     </div>
+
                 </div>
             </div>
 
